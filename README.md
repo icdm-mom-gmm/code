@@ -25,4 +25,3 @@ To display the results from the paper and your own results, use
 ```
 python load_results.py
 ```
-This will display the first five rows of the obtained results.
