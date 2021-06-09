@@ -23,8 +23,15 @@ The final result will be saved as pickeled pandas dataframe. To load it, use for
 ```
 import pickle
 import pandas
-df_result = pickle.load(open(path, 'rb'))
+df_result = pickle.load(open('synthetic/final_result.p', 'rb'))
 df_result.head() # show first few rows
 ```
 
 The results from the paper can be found in the pandas dataframe `original_result.p`.
+Load and display them using
+```
+import pickle
+import pandas
+df_result = pickle.load(open('original_results.p', 'rb'))
+df_result.head() # show first few rows
+```
