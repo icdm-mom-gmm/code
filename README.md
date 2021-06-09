@@ -1,6 +1,7 @@
 # Experiments
-## Requirements
+This repository contains code to reproduce the (synthetic) experiments from the paper 'Mixed Membership Gaussians on Siamese Representations' as submitted to ICDM 2021.
 
+## Requirements
 The following setup was tested on a Ubuntu 18.04.5 LTS system with CUDA Version: 10.2:
 
 ```
@@ -26,4 +27,4 @@ df_result = pickle.load(open(path, 'rb'))
 df_result.head() # show first few rows
 ```
 
-The original results can be found in the pandas dataframe `original_result.p`.
+The results from the paper can be found in the pandas dataframe `original_result.p`.
