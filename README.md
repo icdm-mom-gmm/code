@@ -17,21 +17,11 @@ By default, the values are set to the values used in the paper.
 python experiment.py
 ```
 ## Results
-Intermediate results will be saved as pickeled dictionaries (file extension .p), where keys are tracked quantities and values are lists of values.
+Intermediate results will be saved as pickeled dictionaries (file `results_dict.p`), where keys are tracked quantities and values are lists of values.
+The final result will be saved as pickeled pandas dataframe (file `final_result.p`). 
 
-The final result will be saved as pickeled pandas dataframe. To load it, use for example
+To display the results from the paper and your own results, use
 ```
-import pickle
-import pandas
-df_result = pickle.load(open('synthetic/final_result.p', 'rb'))
-df_result.head() # show first few rows
+python load_results.py
 ```
-
-The results from the paper can be found in the pandas dataframe `original_result.p`.
-Load and display them using
-```
-import pickle
-import pandas
-df_result = pickle.load(open('original_results.p', 'rb'))
-df_result.head() # show first few rows
-```
+This will display the first five rows of the obtained results.
