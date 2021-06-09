@@ -17,8 +17,9 @@ By default, the values are set to the values used in the paper.
 python experiment.py
 ```
 ## Results
-Intermediate results will be saved as pickeled dictionaries (file `results_dict.p`), where keys are tracked quantities and values are lists of values.
-The final result will be saved as pickeled pandas dataframe (file `final_result.p`). 
+Intermediate results will be saved as pickeled dictionaries (file `results/results_dict.p`), where keys are tracked quantities and values are lists of values.
+The final result will be saved as pickeled pandas dataframe (file `results/final_result.p`). 
+The results reported in the paper are saved as `results/original_result.p`.
 
 To display the results from the paper and your own results, use
 ```
