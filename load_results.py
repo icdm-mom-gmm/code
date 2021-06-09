@@ -2,6 +2,8 @@ import pickle
 import pandas as pd
 import os
 
+# To print more than the first 5 rows, simply remove the .head() 
+
 if os.path.exists('results/original_result.p'):
     print('Displaying paper results:')
     df_paper_result = pickle.load(open('results/original_result.p', 'rb'))
